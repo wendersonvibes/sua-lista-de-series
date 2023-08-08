@@ -1,0 +1,113 @@
+:root {
+    --cor-primaria: #212121;
+    --cor-secundaria: #3A4042;
+    --cor-terciaria: #50717B;
+    --cor-quaternaria: #8ECCCC;
+    --cor-neutra: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-neutra);
+}
+
+/* ########### Cabecalho ############ */
+#cabecalho {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ########### Principal ############ */
+.conteudo1 {
+    margin-top: 180px;
+    
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conteudo1 a button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-quaternaria);
+    background-color: var(--cor-terciaria);
+    width: 100%;
+    font-weight: 500;
+    
+} 
+
+.lista-series {
+    margin-top: 70px;
+    height: 350px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Fixa o cabeçalho da tabela */
+.tabela-cabecalho {
+    position: sticky;
+    top: 0;
+}
+
+/* Personalizar a scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--cor-terciaria);
+}
+
+.container-form-add-serie {
+    margin-top: 100px;
+    
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-add-serie {
+    width: 500px;
+    display: grid;
+    justify-content: center;
+}
+
+.form-add-serie input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-add-serie button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-quaternaria);
+    background-color: var(--cor-terciaria);
+}
+
+
+/* ########### Rodapé ############ */
+footer {
+    background-color: var(--cor-secundaria);
+    padding: 5px;
+    width: 100%;
+    margin-top: 30vh;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
